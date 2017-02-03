@@ -1,0 +1,77 @@
+Unless specified otherwise, all of the below tinting applies to both Lollipop and pre-Lollipop using AppCompat v21. 
+To use the support version of these attributes, remove the android namespace.  
+
+For instance, "android:colorControlNormal" becomes "colorControlNormal".  
+
+These attributes will be propagated to their corresponding attributes within the android namespace 
+for devices running Lollipop.  Any exceptions to this will be noted by including the "android:" prefix.
+ 
+All Clickable Views:
+-----------
+* ripple effect (Lollipop only) -- "colorControlHighlight"
+ 
+Status Bar:
+------------
+* background (Lollipop only) - "colorPrimaryDark"
+ 
+Navigation Bar:
+----------------
+* background (Lollipop only) - "android:navigationBarColor"
+ 
+EditText:
+----------
+* underline (unfocused) -- "colorControlNormal"
+* underline overlay (focus) -- "colorAccent"
+* cursor -- "colorAccent"
+* text color -- "android:textColorPrimary"
+
+TextView:
+----------
+* text color -- "android:textColorPrimary"
+ 
+CheckBox:
+----------
+* box unchecked -- "colorControlNormal"
+* box checked -- "colorAccent"
+ 
+RadioButton:
+-------------
+* unselected -- "colorControlNormal"
+* selected -- "colorAccent"
+* ripple effect (Lollipop only) -- "colorControlHighlight"
+ 
+SwitchCompat:
+-------------
+* thumb switch off -- "colorSwitchThumbNormal"
+* thumb switch on -- "colorAccent"
+* track overlay (when switched on) -- "colorAccent"
+ 
+Spinner:
+---------
+* indicator (not pressed) -- "colorControlNormal"
+* indicator (pressed) -- "colorAccent"
+* selected entry text color (Lollipop only) -- "android:textColorPrimary"
+
+Button:
+---------
+* background -- "colorButtonNormal"
+* text color -- "android:textColorPrimary"
+ 
+ActionBar:
+-----------
+* background -- "colorPrimary"
+* title color -- "android:textColorPrimary"
+* overflow icon -- "android:textColorPrimary"
+* up button -- "android:textColorPrimary"
+* action icons -- "android:textColorPrimary" †
+* overflow menu background -- "android:colorBackground"
+* overflow text color -- "android:textColorPrimary"
+ 
+Toolbar (Theme Overlay should be used):
+----------------------------------------
+* background -- must be set manually in XML. Can do (android:background="?attr/colorPrimary")
+* overflow icon -- "android:textColorPrimary"
+* navigation icon -- "android:textColorPrimary" †
+* action icons -- "android:textColorPrimary" †
+* overflow menu background -- "android:colorBackground"
+* overflow text color -- "android:textColorPrimary"
